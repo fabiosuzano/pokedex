@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="pokedex-container">
+        <div class="pokedex_header">
+            <div class="pokedex_header-title">
+                <h1>POKEDEX</h1>
+            </div>
+            
+            <div class="pokedex_header-search">
+                <form action="" id="searchPokemon">
+                    <label for="filter-name">NOME/ID:</label>
+                    <input type="text" id="pokemon">
+                    <button>
+                        <img src="img/pokeball.png" alt="pokeball">
+                    </button>
+
+                </form>  
+
+                <form action="" id="typePokemon">
+                    <label for="filter-type">TIPO:</label>
+                    <select id="filter-type">
+                    <option value>Todos</option>
+                    <option>bug</option>
+                    <option>dragon</option>
+                    <option>electric</option>
+                    <option>fairy</option>
+                    <option>fighting</option>
+                    <option>fire</option>
+                    <option>flying</option>
+                    <option>ghost</option>
+                    <option>grass</option>
+                    <option>ground</option>
+                    <option>ice</option>
+                    <option>normal</option>
+                    <option>poison</option>
+                    <option>psychic</option>
+                    <option>rock</option>
+                    <option>steel</option>
+                    <option>water</option>
+                    </select>
+                    <button>
+                        <img src="img/pokeball.png" alt="pokeball">
+                    </button>                   
+                </form>
+
+                <form action="" id="orderPokemon">
+
+                    <label for="sort">ORDEM:</label>
+                    <select id="sort-type">
+                      <option> ID Crescente </option>
+                      <option> ID Decresente </option>
+                      <option>A-Z</option>
+                      <option>Z-A</option>
+                    </select>
+                    <button>
+                        <img src="img/pokeball.png" alt="pokeball">
+                    </button>
+                </form>
+
+            </div>
+            
+            <div class="pokedex_header-gen">
+                <div class="arrow-left" id="arrow-left"></div>
+                <div class="order" id="textGen">Gen 1</div>
+                <div class="arrow-right" id="arrow-right"></div>
+            </div>
+        </div>
+
+        <div class="pokedex_pokemon-content" id="pokemonContent" onclick="exitModal()">
+        
+        </div>
+    </div>
+
+ 
+    <script src="js/main.js"></script>
+</body>
+</html>
